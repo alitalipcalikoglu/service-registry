@@ -1,0 +1,30 @@
+{
+  "name": "service-registry",
+  "version": "1.0.0",
+  "description": "Service registry",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hakansacmetal/service-registry.git"
+  },
+  "keywords": [],
+  "author": "Ali Talip ÇALIKOĞLU <acalikoglu@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hakansacmetal/service-registry/issues"
+  },
+  "homepage": "https://github.com/Hakansacmetal/service-registry#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "dotenv": "^15.0.0",
+    "express": "^4.17.2",
+    "ping-monitor": "^0.6.2"
+  }
+}
