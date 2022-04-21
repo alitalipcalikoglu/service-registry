@@ -8,14 +8,14 @@ const router = Router()
  *  DEVELOPMENT ONLY
  */
 router.get('/', (req, res) => {
-  res.json(response(true, 'Get Services', ServiceRegistry.services))
+  res.json(response(true, 'Get services', ServiceRegistry.services))
 })
 
 router.get('/:name', (req, res) => {
   const { name } = req.params
   const getService = ServiceRegistry.getByName(name)
   if (!getService) return res.json(response(false, 'Service not found'))
-  res.json(response(true, 'Get Service', getService))
+  res.json(response(true, 'Get service', getService))
 })
 
 router.get('/:name/:version', (req, res) => {
